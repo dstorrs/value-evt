@@ -16,7 +16,7 @@
       (parameterize ([sandbox-output 'string]
                      [sandbox-error-output 'string]
                      [sandbox-memory-limit 50])
-        [make-evaluator #:requires (list "main.rkt") 'racket]))))
+        [make-evaluator #:requires (list 'value-evt) 'racket]))))
 
 
 Wraps an arbitrary value into a synchronizable event.  

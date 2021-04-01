@@ -1,7 +1,7 @@
 value-evt
 ===========
 
-Wraps an arbitrary value into a synchronizable event.  The synchronization result of the event is the original value. 
+Wraps an arbitrary value into a synchronizable event.  The synchronization result of the event is the original value, with two exceptions:  procedures sync to their return value and lists sync recursively.  Both of these values can be disabled via keywords.
 
 See the docs for the most up-to-date info because this README might fall behind.  As of initial creation:
 
